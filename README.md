@@ -1,7 +1,5 @@
-Expansionist
+Expansionist<img width="130px" align="right" src=".graphics/noun_1491944_cc.svg">
 ============
-
-<img width="100px" align="right" src=".graphics/casics-logo-small.svg">
 
 Expansionist expands tokens extracted from program identifiers found in source code files. It can produce more meaningful terms for use in machine learning and other activities.  Expansionist can be applied after splitting identifiers using a package such as [Spiral](https://github.com/casics/spiral).
 
@@ -33,6 +31,8 @@ Everyone is asked to read and respect the [code of conduct](CONDUCT.md) when par
 ------------------
 
 This material is based upon work supported by the [National Science Foundation](https://nsf.gov) under Grant Number 1533792 (Principal Investigator: Michael Hucka).  Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.
+
+The icon for Expansionist is "world" by Dinosoft Labs &ndash; [icon #1491944 in the Noun Project](https://thenounproject.com/search/?q=api&i=1491944).  It is used under the terms of a Creative Commons license.
 
 <br>
 <div align="center">
