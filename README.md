@@ -1,7 +1,7 @@
 Expansionist<img width="130px" align="right" src=".graphics/noun_1491944_cc.svg">
 ============
 
-Expansionist expands tokens extracted from program identifiers found in source code files. It can produce more meaningful terms for use in machine learning and other activities.  Expansionist can be applied after splitting identifiers using a package such as [Spiral](https://github.com/casics/spiral).
+Expansionist takes a program identifier such as a function or variable name, and converts it into a short meaningful phrase comprised of expanded versions of the individual tokens in the identifier.  The result can be more meaningful inputs for use in machine learning and other activities.
 
 *Authors*:      [Michael Hucka](http://github.com/mhucka)<br>
 *Repository*:   [https://github.com/casics/expansionist](https://github.com/casics/expansionist)<br>
@@ -10,12 +10,9 @@ Expansionist expands tokens extracted from program identifiers found in source c
 ☀ Introduction
 -----------------------------
 
-Natural language processing (NLP) methods are increasingly being used for source code analysis.  The methods rely on terms (identifiers and other textual strings) extracted from program source code and comments.  The methods often work better if, instead of raw identifiers, real words are used as features; that is, `read`, `From` and `File` are often better features for NLP tools than an identifier `readFromFile`.  This leads to the need for automated methods for splitting identifiers of classes, functions, variables, and other entities into word-like constituents.
+Natural language processing (NLP) methods are increasingly being used for source code analysis.  The methods rely on terms (identifiers and other textual strings) extracted from program source code.  The methods often work better if, instead of cryptic identifiers such as `readf`, real words and expressions such as [`read`, `file`] are used. This leads to the need for automated methods for splitting and expanding identifiers of classes, functions, variables, and other entities into word-like constituents.
 
-Sometimes identifiers can be cryptic but meaningful to experienced human readers, but software lacks the intuition needed to make sense of them.  For example, human readers will naturally tend to interpret something like `getInt` this as meaning "get an integer", but software lacks human intuition and needs more help to glean meaning from `get` and `Int`.  One of the hypotheses underlying the approach being taken in [CASICS](http://casics.org) is that machine learning algorithms may perform better if identifiers are not only split, but also expanded.  For this reason, we needed to implement advanced identifier splitting and elaboration algorithms.
-
-_Expansionist_ is a program that can be applied to short tokens to produce candidate expansions based on contextual information.  The context can be, e.g., text extracted from comments, strings and file headers of source code files where the tokens are found.
-
+_Expansionist_ is a program that can take an identifier and expand it into a short phrase based on contextual information.  The context can be, e.g., text extracted from comments, strings, and file headers of source code files where the tokens are found.
 
 ⁇ Getting help and support
 --------------------------
