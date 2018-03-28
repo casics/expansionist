@@ -1,23 +1,26 @@
-CASICS @@REPO_NAME@@
-================
+Expansionist
+============
 
 <img width="100px" align="right" src=".graphics/casics-logo-small.svg">
 
-@@SHORT_DESCRIPTION@@
+Expansionist expands tokens extracted from program identifiers found in source code files. It can produce more meaningful terms for use in machine learning and other activities.  Expansionist can be applied after splitting identifiers using a package such as [Spiral](https://github.com/casics/spiral).
 
-*Authors*:      [Michael Hucka](http://github.com/mhucka) and [Matthew J. Graham](https://github.com/doccosmos)<br>
-*Repository*:   [https://github.com/casics/@@REPO@@](https://github.com/casics/@@REPO@@)<br>
+*Authors*:      [Michael Hucka](http://github.com/mhucka)<br>
+*Repository*:   [https://github.com/casics/expansionist](https://github.com/casics/expansionist)<br>
 *License*:      Unless otherwise noted, this content is licensed under the [GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html) license.
 
 ☀ Introduction
 -----------------------------
 
-@@EXPLANATION@@
+Natural language processing (NLP) methods are increasingly being applied to source code analysis for various purposes.  The methods rely on terms (identifiers and other textual strings) extracted from program source code and comments.  The methods often work better if, instead of raw identifiers, real words are used as features; that is, `get` and `string` are often better features for NLP tools than `getStr`.  This leads to the need for automated methods for splitting and expanding identifiers of classes, functions, variables, and other entities into word-like constituents.
+
+_Expansionist_ is a program that can be applied to short tokens to produce candidate expansions based on contextual information.  The context can be, e.g., text extracted from comments, strings and file headers of source code files where the tokens are found.
+
 
 ⁇ Getting help and support
 --------------------------
 
-If you find an issue, please submit it in [the GitHub issue tracker](https://github.com/casics/@@REPO@@/issues) for this repository.
+If you find an issue, please submit it in [the GitHub issue tracker](https://github.com/casics/expansionist/issues) for this repository.
 
 ♬ Contributing &mdash; info for developers
 ------------------------------------------
