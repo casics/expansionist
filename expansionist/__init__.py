@@ -32,3 +32,5 @@ Software Inventory Creation System.  For more, visit http://casics.org.
 from .__version__ import __version__, __title__, __description__, __url__
 from .__version__ import __author__, __email__
 from .__version__ import __license__, __copyright__
+
+from .constants import common_computing_acronyms
