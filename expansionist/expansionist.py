@@ -136,6 +136,3 @@ def expand(identifier, contexts, as_list = True,
     else:
         final = results
     return results if as_list else ' '.join(results)
-
-
-print(expand('asn1_open', [['config', 'configuration']]))
